@@ -10,7 +10,7 @@ for(let i = 0; i < word.length; i++ ){
     letters.push(letter);
     console.log(letters)
 }
-for(let i = 0; i < letters.length; i++){
+for(let i = 0; i < word.length; i++){
     rword += letters.pop()
     console.log(rword)
 }
