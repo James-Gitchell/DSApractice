@@ -34,7 +34,7 @@ q.enqueue('a')
 
 
 
-functionPriorityQueue () {
+function priorityQueue() {
     let collection = [];
     this.printCollection = function() {
         (console.log(collection));
@@ -46,7 +46,7 @@ functionPriorityQueue () {
             let added = false;
             for (let i = 0; i < collection.length; i++){
                 if (element[1] < collection[i][1]){ //checking priorities
-                collection.splice(io,0,element);
+                collection.splice(i,0,element);
             added = true;
         break;
     }
@@ -77,10 +77,11 @@ if (!added){
 
 //pq will enque in order of the added index
 
-let pq = functionPriorityQueue();
+let pq = new priorityQueue()
 pq.enqueue(['ana sykes', 4]);
 pq.enqueue(['ayesha ahmad', 1])
 pq.enqueue(["random lady two", 2])
 pq.enqueue(["random third girl", 3])
+
 
 //pq will enque in order of the added index
