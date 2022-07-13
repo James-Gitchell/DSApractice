@@ -67,6 +67,7 @@ find(data) {
         } else {
             current = current.right;
         }
+    }}
         isPresent(data) {
             let current = this.root;
             while (current) {
@@ -80,7 +81,7 @@ find(data) {
             }
          }
             return false;
-        }}}
+        }
 
  remove(data) { 
     const removeNode = function(node, data) {
@@ -114,5 +115,6 @@ find(data) {
 }
       
 const bst = new BST();
+
         
 
